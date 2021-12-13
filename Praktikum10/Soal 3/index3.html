@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="author" content="Adhitya PPT 2172024">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .ksemua {
+        border: 3px solid black;
+        height: 150px;
+        width: 150px;
+        float: left;
+        text-align: center;
+        font-size: 75px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="kotak1" class="ksemua">0</div>
+    <div id="kotak2" class="ksemua">0</div>
+    <div id="kotak3" class="ksemua">0</div>
+    <div id="kotak4" class="ksemua">0</div>
+    <div id="kotak5" class="ksemua">0</div>
+    <script>
+      document.onkeydown = pressKey;
+
+      function pressKey(e) {
+
+        e = e || window.event;
+
+        if (e.keyCode == "38") {
+          document.querySelector("#kotak1").innerHTML++;
+        } else if (e.keyCode == "40") {
+          document.querySelector("#kotak1").innerHTML--;
+        } else if (e.keyCode == "37") {
+          document.getElementById("kotak2").style.border = "2px solid red";
+        } else if (e.keyCode == "39") {
+          document.getElementById("kotak2").style.border = "2px solid red";
+        }
+      }
+    </script>
+  </body>
+</html>
+ 
